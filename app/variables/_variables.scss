@@ -1,0 +1,23 @@
+//reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//colors
+$textColor: #ffffff;
+$veryDarkBlue: hsl(207, 26%, 17%);
+$darkBlue: hsl(209, 23%, 22%);
+
+//fonts
+
+html {
+  font-size: 63.3%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+//mixin
