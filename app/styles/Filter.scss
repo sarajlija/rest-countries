@@ -1,0 +1,61 @@
+@import "../variables/_variables.scss";
+
+.container {
+  margin: 4rem 8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+    gap: 1rem;
+  }
+}
+.form-control {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  background-color: $darkBlue;
+  @media (max-width: 768px) {
+    min-width: 60%;
+  }
+  input {
+    background-color: $darkBlue;
+    height: 4rem;
+    color: $textColor;
+    border: none;
+    outline: none;
+    &[type="search"] {
+      font-size: 1.8rem;
+      color: $colorInput;
+    }
+    &::placeholder {
+      font-size: 1.8rem;
+      color: $colorInputPlaceholder;
+    }
+  }
+
+  .icon-search {
+    font-size: x-large;
+    color: $textColor;
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+}
+.select {
+  width: 20%;
+  height: 4rem;
+  background-color: $darkBlue;
+  color: $colorInputPlaceholder;
+  margin-left: 0.6rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  @media (max-width: 768px) {
+    min-width: 40%;
+    margin: 0 auto;
+  }
+}

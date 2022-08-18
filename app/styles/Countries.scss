@@ -1,14 +1,16 @@
 @import "../variables/_variables.scss";
 
 .grid {
-  font-family: "Nunito Sans", sans-serif;
   color: $textColor;
-  padding: 14rem 8rem;
+  padding: 6rem 8rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   column-gap: 2rem;
   row-gap: 4rem;
   align-items: center;
+  @media (max-width: 768px) {
+    padding: 6rem 4rem;
+  }
 }
 
 .country {
@@ -29,5 +31,9 @@
     height: 100%;
     padding: 2rem;
     background-color: $darkBlue;
+    span {
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 300;
+    }
   }
 }

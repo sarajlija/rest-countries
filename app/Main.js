@@ -6,11 +6,13 @@ import "./styles/main.css"
 //Components
 import Header from "./components/Header"
 import Countries from "./components/Countries"
+import Filter from "./components/Filter"
 
 function Main() {
   return (
     <>
-      {/*<Header />*/}
+      <Header />
+      <Filter />
       <Countries />
     </>
   )

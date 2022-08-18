@@ -33,16 +33,16 @@ const Countries = () => {
               </div>
               <div className="card-text">
                 <h3>
-                  Name:<span>{name}</span>
+                  Name: <span>{name}</span>
                 </h3>
                 <h4>
-                  Population:<span>{population}</span>
+                  Population: <span>{population}</span>
                 </h4>
                 <h4>
-                  Region:<span>{region}</span>
+                  Region: <span>{region}</span>
                 </h4>
                 <h4>
-                  Capital:<span>{capital}</span>
+                  Capital: <span>{capital}</span>
                 </h4>
               </div>
             </article>

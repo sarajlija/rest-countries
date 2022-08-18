@@ -13,15 +13,19 @@ body {
 }
 
 .grid {
-  font-family: "Nunito Sans", sans-serif;
   color: #ffffff;
-  padding: 14rem 8rem;
+  padding: 6rem 8rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   row-gap: 4rem;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .grid {
+    padding: 6rem 4rem;
+  }
 }
 
 .country {
@@ -44,4 +48,8 @@ body {
   height: 100%;
   padding: 2rem;
   background-color: hsl(209deg, 23%, 22%);
+}
+.country .card-text span {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
 }/*# sourceMappingURL=Countries.css.map */
