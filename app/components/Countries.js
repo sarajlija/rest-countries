@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import "../styles/Countries.css"
 const url = "https://restcountries.com/v2/all"
 
@@ -44,6 +45,7 @@ const Countries = () => {
                 <h4>
                   Capital: <span>{capital}</span>
                 </h4>
+                <Link to="/components/Country">Read more</Link>
               </div>
             </article>
           )
