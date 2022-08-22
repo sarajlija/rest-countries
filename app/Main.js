@@ -15,7 +15,7 @@ function Main() {
       <Header />
       <Routes>
         <Route exact path="/" element={((<Filter />), (<Countries />))} />
-        <Route path="/components" element={<Country />} />
+        <Route path="/name" element={<Country />} />
       </Routes>
     </BrowserRouter>
   )
