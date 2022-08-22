@@ -1,30 +1,32 @@
 import React from "react"
+import { FaLongArrowAltLeft } from "react-icons/fa"
 import { Link, useParams } from "react-router-dom"
 
 function Country() {
-  const { numericCode, name, flag, population, region, capital } = useParams()
   return (
     <div>
       {
-        <article key={numericCode} className="country">
+        <article className="country">
+          <Link style={{ color: "#ffffff" }} to={"/"}>
+            <FaLongArrowAltLeft /> Back
+          </Link>
           <div className="card-img">
-            <img src={flag} alt={name} />
+            <img src="https://flagcdn.com/al.svg" alt={name} />
           </div>
           <div className="card-text">
             <h3>
-              Name: <span>{name}</span>
+              Name: <span>TEXT</span>
             </h3>
             <h4>
-              Population: <span>{population}</span>
+              Population: <span>TEXT</span>
             </h4>
             <h4>
-              Region: <span>{region}</span>
+              Region: <span>TEXT</span>
             </h4>
             <h4>
-              Capital: <span>{capital}</span>
+              Capital: <span>TEXT</span>
             </h4>
           </div>
-          <Link style={{ color: "#ffffff" }}>Back</Link>
         </article>
       }
     </div>
