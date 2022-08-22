@@ -2,7 +2,7 @@ import React from "react"
 import { FaLongArrowAltLeft } from "react-icons/fa"
 import { Link, useParams } from "react-router-dom"
 
-function Country() {
+function Country(name) {
   return (
     <div>
       {
@@ -11,7 +11,7 @@ function Country() {
             <FaLongArrowAltLeft /> Back
           </Link>
           <div className="card-img">
-            <img src="https://flagcdn.com/al.svg" alt={name} />
+            <img src={`https://restcountries.com/v2/name/`} alt={name} />
           </div>
           <div className="card-text">
             <h3>
