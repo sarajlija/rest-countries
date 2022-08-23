@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 63.3%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.single-country {
+  margin: 4rem 16rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.single-country .btn {
+  align-self: flex-start;
+  padding: 1.3rem 3rem;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #ffffff;
+  background-color: hsl(209deg, 23%, 22%);
+  text-decoration: none;
+}
+.single-country article {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+.single-country article .flag {
+  width: 100%;
+  height: auto;
+  min-width: 400px;
+  height: auto;
+}
+.single-country article .flag img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.single-country article .country-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem;
+  gap: 4rem;
+}
+.single-country article .country-inner .country-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+  line-height: 2rem;
+}
+.single-country article .country-inner .country-details h2 {
+  color: #ffffff;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  line-height: 3rem;
+}
+.single-country article .country-inner .country-details h5 {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+.single-country article .country-inner .country-details h5 span {
+  margin-left: 0.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.single-country article .country-inner .country-details .top-level {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+}
+.single-country article .country-inner .border-details {
+  display: flex;
+  color: #ffffff;
+}
+.single-country article .country-inner .border-details ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-left: 1rem;
+}
+.single-country article .country-inner .border-details ul li {
+  padding: 0.8rem 1.6rem;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: rgba(255, 255, 255, 0.5);
+  background-color: hsl(209deg, 23%, 22%);
+}/*# sourceMappingURL=Country.css.map */

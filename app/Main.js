@@ -6,7 +6,7 @@ import "./styles/main.css"
 //Components
 import Header from "./components/Header"
 import Countries from "./components/Countries"
-import Filter from "./components/Filter"
+
 import Country from "./components/Country"
 
 function Main() {
@@ -14,10 +14,8 @@ function Main() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route exact path="/" element={((<Filter />), (<Countries />))} />
-        <Route>
-          <Route path="/country" element={<Country />} />
-        </Route>
+        <Route exact path="/" element={<Countries />} />
+        <Route path="/country/:name" element={<Country />} />
       </Routes>
     </BrowserRouter>
   )
