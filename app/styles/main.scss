@@ -3,7 +3,12 @@
 body {
   font-family: "Nunito Sans", sans-serif;
   background-color: $veryDarkBlue;
+  &.light-theme {
+    background-color: #dfdfdf;
+    color: $lightModeText;
+  }
 }
+
 h1 {
   font-size: 2.4rem;
 }

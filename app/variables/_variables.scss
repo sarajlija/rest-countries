@@ -7,11 +7,15 @@
 }
 
 //colors
-$textColor: #ffffff;
+$textColor: hsl(0, 0%, 100%);
 $veryDarkBlue: hsl(207, 26%, 17%);
 $darkBlue: hsl(209, 23%, 22%);
 $colorInput: rgba(255, 255, 255, 0.8);
 $colorInputPlaceholder: rgba(255, 255, 255, 0.5);
+$lightModeText: hsl(200, 15%, 8%);
+$lighModeInput: hsl(0, 0%, 52%);
+$lightModeBackground: hsl(0, 0%, 98%);
+$lightModeElements: hsl(0, 0%, 100%);
 
 //fonts
 

@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import "../styles/Filter.css"
 import { FaSearch } from "react-icons/fa"
 
-function Filter(searchInput, setSearchInput, setFiltered, setCountries, countries) {
+const Filter = ({ searchInput, setSearchInput, setFiltered, setCountries, countries }) => {
   const regions = [
     {
       name: "Filter by region",
@@ -51,7 +51,7 @@ function Filter(searchInput, setSearchInput, setFiltered, setCountries, countrie
   // Filter by region
 
   const filterRegions = async region => {
-    const url = `https://restcountries.eu/rest/v2/region/${region}`
+    const url = `https://restcountries.com/v2/region/${region}`
     const res = await fetch(url)
     const data = await res.json()
     setCountries(data)
@@ -64,7 +64,7 @@ function Filter(searchInput, setSearchInput, setFiltered, setCountries, countrie
   return (
     <>
       <div className="container">
-        <form className="form-control" onSubmit={handleSubmit}>
+        <form className="form-control" onSubmit={handleSubmit} autoComplete="off">
           <FaSearch className="icon-search" />
           <input onChange={e => searchCountries(e.target.value)} type="search" name="search" id="search" placeholder="Search for a country" />
         </form>

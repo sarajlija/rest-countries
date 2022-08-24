@@ -40,9 +40,10 @@ body {
   }
 }
 .form-control input {
+  width: 100%;
   background-color: hsl(209deg, 23%, 22%);
   height: 4rem;
-  color: #ffffff;
+  color: hsl(0deg, 0%, 100%);
   border: none;
   outline: none;
 }
@@ -62,9 +63,12 @@ body {
   font-size: 1.8rem;
   color: rgba(255, 255, 255, 0.5);
 }
+.form-control input.light-theme {
+  background-color: hsl(0deg, 0%, 52%);
+}
 .form-control .icon-search {
   font-size: x-large;
-  color: #ffffff;
+  color: hsl(0deg, 0%, 100%);
   margin-right: 1.5rem;
   margin-left: 1rem;
   cursor: pointer;
@@ -85,4 +89,7 @@ body {
     min-width: 40%;
     margin: 0 auto;
   }
+}
+.select.light-theme {
+  background-color: hsl(0deg, 0%, 52%);
 }/*# sourceMappingURL=Filter.css.map */

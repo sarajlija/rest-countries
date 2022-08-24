@@ -2,14 +2,13 @@
 
 .grid {
   color: $textColor;
-  padding: 6rem 8rem;
+  padding: 6rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  column-gap: 2rem;
-  row-gap: 4rem;
+  gap: 3rem;
   align-items: center;
   @media (max-width: 768px) {
-    padding: 6rem 4rem;
+    padding: 6rem 1rem;
   }
 }
 
@@ -31,9 +30,14 @@
     height: 100%;
     padding: 2rem;
     background-color: $darkBlue;
+    transition: background-color 0.4s;
     span {
       color: rgba(255, 255, 255, 0.5);
       font-weight: 300;
+    }
+    &.light-themes {
+      background-color: $lightModeBackground;
+      color: $lightModeText;
     }
   }
 }

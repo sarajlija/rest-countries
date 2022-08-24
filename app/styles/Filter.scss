@@ -21,7 +21,9 @@
   @media (max-width: 768px) {
     min-width: 60%;
   }
+
   input {
+    width: 100%;
     background-color: $darkBlue;
     height: 4rem;
     color: $textColor;
@@ -34,6 +36,9 @@
     &::placeholder {
       font-size: 1.8rem;
       color: $colorInputPlaceholder;
+    }
+    &.light-theme {
+      background-color: $lighModeInput;
     }
   }
 
@@ -57,5 +62,8 @@
   @media (max-width: 768px) {
     min-width: 40%;
     margin: 0 auto;
+  }
+  &.light-theme {
+    background-color: $lighModeInput;
   }
 }

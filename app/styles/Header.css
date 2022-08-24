@@ -29,6 +29,10 @@ body {
     gap: 1rem;
   }
 }
+.header.light-theme {
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(200deg, 15%, 8%);
+}
 
 h1 {
   margin-left: 8rem;

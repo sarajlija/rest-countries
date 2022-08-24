@@ -34,7 +34,7 @@ function Country() {
               </div>
               <div className="country-inner">
                 <div className="country-details">
-                  <div>
+                  <div className="details">
                     <h2>{name}</h2>
                     <h5>
                       Native Name: <span>{nativeName}</span>

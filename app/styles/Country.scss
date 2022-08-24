@@ -1,12 +1,17 @@
 @import "../variables/_variables.scss";
 
 .single-country {
-  margin: 4rem 16rem 0;
+  padding: 2rem 2rem 4rem 4rem;
   display: flex;
+  margin: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 6rem;
+  @media (max-width: 768px) {
+    padding: 2rem;
+    gap: 3rem;
+  }
   .btn {
     align-self: flex-start;
     padding: 1.3rem 3rem;
@@ -20,10 +25,13 @@
     display: flex;
     flex-direction: row;
     gap: 4rem;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
     .flag {
       width: 100%;
       height: auto;
-      min-width: 400px;
+      min-width: 300px;
       height: auto;
       img {
         width: 100%;
@@ -34,52 +42,98 @@
     .country-inner {
       display: flex;
       flex-direction: column;
-      padding: 8rem;
+      padding: 8rem 4rem;
       gap: 4rem;
+      @media (max-width: 768px) {
+        gap: 2rem;
+        padding: 2rem 4rem;
+      }
       .country-details {
         display: flex;
         justify-content: space-between;
         gap: 8rem;
         line-height: 2rem;
-        h2 {
-          color: $textColor;
-          font-size: 2.8rem;
-          margin-bottom: 1rem;
-          line-height: 3rem;
+        @media (max-width: 768px) {
+          gap: 2rem;
         }
-        h5 {
-          color: $textColor;
-          font-size: 1.4rem;
-          span {
-            margin-left: 0.6rem;
-            color: rgba(255, 255, 255, 0.5);
+        .details {
+          h2 {
+            color: $textColor;
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            line-height: 3rem;
+          }
+          h5 {
+            color: $textColor;
+            font-size: 1.4rem;
+            span {
+              margin-left: 0.6rem;
+              color: rgba(255, 255, 255, 0.5);
+            }
+          }
+          &.light-theme h5 {
+            color: $lightModeText;
+          }
+          &.light-theme h5 span {
+            color: $lighModeInput;
           }
         }
         .top-level {
           display: flex;
           justify-content: center;
           flex-direction: column;
-
           text-align: start;
+          h5 {
+            color: $textColor;
+          }
+          h5 span {
+            color: rgba(255, 255, 255, 0.5);
+          }
+
+          &.light-theme h5 {
+            color: $lightModeText;
+          }
+          &.light-theme h5 span {
+            color: rgba(133, 27, 27, 0.5);
+          }
         }
       }
-      .border-details {
+      @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 2rem;
+      }
+    }
+    .border-details {
+      display: flex;
+      color: $textColor;
+      h3 {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+      ul {
+        width: 100%;
         display: flex;
-        color: $textColor;
-        ul {
-          width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin-left: 1rem;
+        @media (max-width: 768px) {
           display: flex;
-          justify-content: space-around;
-          align-items: center;
-          list-style: none;
-          margin-left: 1rem;
-
-          li {
-            padding: 0.8rem 1.6rem;
-            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            color: rgba(255, 255, 255, 0.5);
-            background-color: $darkBlue;
-          }
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+        li {
+          padding: 0.8rem 1.6rem;
+          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          color: rgba(255, 255, 255, 0.5);
+          background-color: $darkBlue;
+        }
+        &.light-theme {
+          background-color: $lightModeBackground;
+          color: $lightModeText;
         }
       }
     }
