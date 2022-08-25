@@ -1,25 +1,30 @@
 @import "../variables/_variables.scss";
 
 .single-country {
-  padding: 2rem 2rem 4rem 4rem;
+  padding: 0 2rem 4rem 4rem;
   display: flex;
-  margin: 0;
+  margin-top: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 6rem;
+
   @media (max-width: 768px) {
-    padding: 2rem;
+    padding: 0 2rem;
     gap: 3rem;
+  }
+  &.light-theme .btn {
+    color: $lightModeText;
+    background-color: $lightModeBackground;
   }
   .btn {
     align-self: flex-start;
     padding: 1.3rem 3rem;
-
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: $textColor;
     background-color: $darkBlue;
     text-decoration: none;
+    border-radius: 0.5rem;
   }
   article {
     display: flex;
@@ -46,11 +51,13 @@
       gap: 4rem;
       @media (max-width: 768px) {
         gap: 2rem;
-        padding: 2rem 4rem;
+
+        flex-direction: column;
+        padding: 2rem;
       }
       .country-details {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: 8rem;
         line-height: 2rem;
         @media (max-width: 768px) {
@@ -63,6 +70,7 @@
             margin-bottom: 1rem;
             line-height: 3rem;
           }
+
           h5 {
             color: $textColor;
             font-size: 1.4rem;
@@ -70,6 +78,9 @@
               margin-left: 0.6rem;
               color: rgba(255, 255, 255, 0.5);
             }
+          }
+          &.light-theme h2 {
+            color: $lightModeText;
           }
           &.light-theme h5 {
             color: $lightModeText;
@@ -94,26 +105,39 @@
             color: $lightModeText;
           }
           &.light-theme h5 span {
-            color: rgba(133, 27, 27, 0.5);
+            color: hsl(0deg, 0%, 52%);
           }
         }
-      }
-      @media (max-width: 768px) {
-        flex-direction: column;
-        padding: 2rem;
       }
     }
     .border-details {
       display: flex;
       color: $textColor;
+      flex-wrap: wrap;
+      row-gap: 1rem;
+      &.light-theme {
+        color: $lightModeText;
+      }
+
       h3 {
         font-size: 1.8rem;
       }
+
+      &.light-theme h3 {
+        color: $lightModeText;
+      }
+      &.light-theme li {
+        color: $lighModeInput;
+        background-color: $lightModeBackground;
+        box-shadow: 0 6px 20px 0 rgb(226 211 211 / 19%);
+        border-radius: 0.5rem;
+      }
+
       @media (max-width: 768px) {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
       }
       ul {
-        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -121,6 +145,8 @@
         margin-left: 1rem;
         @media (max-width: 768px) {
           display: flex;
+          flex-direction: row;
+          margin-left: 1rem;
           margin-top: 1rem;
           margin-bottom: 1rem;
           text-align: center;
@@ -130,10 +156,7 @@
           box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           color: rgba(255, 255, 255, 0.5);
           background-color: $darkBlue;
-        }
-        &.light-theme {
-          background-color: $lightModeBackground;
-          color: $lightModeText;
+          border-radius: 0.5rem;
         }
       }
     }

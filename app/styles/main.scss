@@ -7,8 +7,16 @@ body {
     background-color: #dfdfdf;
     color: $lightModeText;
   }
+  &.light-theme {
+    color: $lightModeText;
+    background-color: $lightModeBackground;
+  }
 }
 
 h1 {
   font-size: 2.4rem;
+}
+
+.loading {
+  color: $textColor;
 }

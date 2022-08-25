@@ -25,6 +25,18 @@ body {
     padding: 6rem 1rem;
   }
 }
+.grid.light-theme {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(200deg, 15%, 8%);
+}
+.grid.light-theme .country .card-text {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(200deg, 15%, 8%);
+  border-radius: 0.5rem;
+}
+.grid.light-theme .card-text h4 span {
+  color: hsl(0deg, 0%, 52%);
+}
 
 .country {
   width: 300px;

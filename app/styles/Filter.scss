@@ -12,6 +12,23 @@
     margin: 4rem auto;
     gap: 1rem;
   }
+  &.light-theme .form-control,
+  &.light-theme input,
+  &.light-theme .select {
+    background-color: $textColor;
+    color: $lightModeText;
+    border-radius: 1rem;
+  }
+  &.light-theme input[type="search"] {
+    color: $lightModeText;
+  }
+  &.light-theme .form-control .icon-search {
+    color: $darkBlue;
+  }
+  &.light-theme .form-control {
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
 }
 .form-control {
   width: 40%;
@@ -35,10 +52,7 @@
     }
     &::placeholder {
       font-size: 1.8rem;
-      color: $colorInputPlaceholder;
-    }
-    &.light-theme {
-      background-color: $lighModeInput;
+      color: $darkBlue;
     }
   }
 

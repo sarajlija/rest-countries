@@ -27,6 +27,21 @@ body {
     gap: 1rem;
   }
 }
+.container.light-theme .form-control, .container.light-theme input, .container.light-theme .select {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(200deg, 15%, 8%);
+  border-radius: 1rem;
+}
+.container.light-theme input[type=search] {
+  color: hsl(200deg, 15%, 8%);
+}
+.container.light-theme .form-control .icon-search {
+  color: hsl(209deg, 23%, 22%);
+}
+.container.light-theme .form-control {
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
 
 .form-control {
   width: 40%;
@@ -53,18 +68,15 @@ body {
 }
 .form-control input::-moz-placeholder {
   font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: hsl(209deg, 23%, 22%);
 }
 .form-control input:-ms-input-placeholder {
   font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: hsl(209deg, 23%, 22%);
 }
 .form-control input::placeholder {
   font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.5);
-}
-.form-control input.light-theme {
-  background-color: hsl(0deg, 0%, 52%);
+  color: hsl(209deg, 23%, 22%);
 }
 .form-control .icon-search {
   font-size: x-large;

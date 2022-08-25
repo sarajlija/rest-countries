@@ -10,6 +10,19 @@
   @media (max-width: 768px) {
     padding: 6rem 1rem;
   }
+  &.light-theme {
+    background-color: $textColor;
+    color: $lightModeText;
+  }
+
+  &.light-theme .country .card-text {
+    background-color: $textColor;
+    color: $lightModeText;
+    border-radius: 0.5rem;
+  }
+  &.light-theme .card-text h4 span {
+    color: $lighModeInput;
+  }
 }
 
 .country {
@@ -25,6 +38,7 @@
       object-fit: cover;
     }
   }
+
   .card-text {
     width: 100%;
     height: 100%;

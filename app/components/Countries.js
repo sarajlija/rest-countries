@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import "../styles/Countries.css"
+import "../styles/main.css"
 import Filter from "./Filter"
 const url = "https://restcountries.com/v2/all"
 
