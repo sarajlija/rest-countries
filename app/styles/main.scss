@@ -84,6 +84,10 @@ body {
   &.light-theme .single-country article .country-inner .border-details h3 {
     color: $darkBlue;
   }
+  &.light-theme .single-country article .country-inner .border-details ul li {
+    background-color: $lightModeElements;
+    color: $darkBlue;
+  }
 }
 .loading {
   color: $textColor;

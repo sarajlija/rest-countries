@@ -104,6 +104,10 @@ body.light-theme .single-country article .country-inner .country-details .top-le
 body.light-theme .single-country article .country-inner .border-details h3 {
   color: hsl(209deg, 23%, 22%);
 }
+body.light-theme .single-country article .country-inner .border-details ul li {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(209deg, 23%, 22%);
+}
 
 .loading {
   color: hsla(0deg, 0%, 100%, 0.8);
