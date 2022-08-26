@@ -20,6 +20,10 @@ body {
   align-items: center;
   background-color: hsl(209deg, 23%, 22%);
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*&.light-theme .dark-mode {
+    background-color: $lightModeBackground;
+    color: $lightModeText;
+  }*/
 }
 @media (max-width: 768px) {
   .header {
@@ -28,10 +32,6 @@ body {
     align-items: center;
     flex-direction: column;
   }
-}
-.header.light-theme {
-  background-color: hsl(0deg, 0%, 98%);
-  box-shadow: 0 1px 23px -1px rgba(0, 0, 0, 0.1);
 }
 .header h1 {
   margin-left: 8rem;
@@ -43,35 +43,28 @@ body {
     margin-left: 0;
   }
 }
-.header.light-theme h1 {
-  background-color: hsl(0deg, 0%, 98%);
-  color: hsl(200deg, 15%, 8%);
-}
-.header .dark-mode {
+.header .btn-toggle {
   display: flex;
   align-items: center;
   margin-right: 8rem;
   margin-left: 0.6rem;
   color: #ffffff;
   text-transform: capitalize;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
-  .header .dark-mode {
+  .header .btn-toggle {
     margin-right: 0;
     margin-top: 1rem;
     justify-content: center;
     align-items: center;
   }
 }
-.header .dark-mode span {
+.header .btn-toggle span {
   margin-left: 1rem;
 }
 @media (max-width: 768px) {
-  .header .dark-mode span {
+  .header .btn-toggle span {
     align-self: center;
   }
-}
-.header.light-theme .dark-mode {
-  background-color: hsl(0deg, 0%, 98%);
-  color: hsl(200deg, 15%, 8%);
 }/*# sourceMappingURL=Header.css.map */

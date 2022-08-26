@@ -13,11 +13,10 @@
     padding: 0 2rem;
     gap: 3rem;
   }
-  &.light-theme .btn {
-    color: $lightModeText;
-    background-color: $lightModeBackground;
-  }
+
   .btn {
+    display: flex;
+    align-items: center;
     align-self: flex-start;
     padding: 1.3rem 3rem;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -30,7 +29,7 @@
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       flex-direction: column;
     }
     .flag {
@@ -40,7 +39,8 @@
       height: auto;
       img {
         width: 100%;
-        height: 100%;
+        min-width: 300px;
+        height: auto;
         object-fit: cover;
       }
     }
@@ -51,7 +51,6 @@
       gap: 4rem;
       @media (max-width: 768px) {
         gap: 2rem;
-
         flex-direction: column;
         padding: 2rem;
       }
@@ -79,15 +78,6 @@
               color: rgba(255, 255, 255, 0.5);
             }
           }
-          &.light-theme h2 {
-            color: $lightModeText;
-          }
-          &.light-theme h5 {
-            color: $lightModeText;
-          }
-          &.light-theme h5 span {
-            color: $lighModeInput;
-          }
         }
         .top-level {
           display: flex;
@@ -100,13 +90,6 @@
           h5 span {
             color: rgba(255, 255, 255, 0.5);
           }
-
-          &.light-theme h5 {
-            color: $lightModeText;
-          }
-          &.light-theme h5 span {
-            color: hsl(0deg, 0%, 52%);
-          }
         }
       }
     }
@@ -115,28 +98,17 @@
       color: $textColor;
       flex-wrap: wrap;
       row-gap: 1rem;
-      &.light-theme {
-        color: $lightModeText;
-      }
-
-      h3 {
-        font-size: 1.8rem;
-      }
-
-      &.light-theme h3 {
-        color: $lightModeText;
-      }
-      &.light-theme li {
-        color: $lighModeInput;
-        background-color: $lightModeBackground;
-        box-shadow: 0 6px 20px 0 rgb(226 211 211 / 19%);
-        border-radius: 0.5rem;
-      }
 
       @media (max-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
       }
+
+      h3 {
+        align-self: center;
+        font-size: 1.8rem;
+      }
+
       ul {
         display: flex;
         justify-content: space-around;
@@ -157,6 +129,7 @@
           color: rgba(255, 255, 255, 0.5);
           background-color: $darkBlue;
           border-radius: 0.5rem;
+          font-size: 1rem;
         }
       }
     }

@@ -16,6 +16,7 @@ function Main() {
       <Routes>
         <Route exact path="/" element={<Countries />} />
         <Route path="/country/:name" element={<Country />} />
+        <Route path="/countries/:name" element={<Country />} />
       </Routes>
     </BrowserRouter>
   )

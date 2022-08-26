@@ -13,7 +13,7 @@ body {
 }
 
 .grid {
-  color: hsl(0deg, 0%, 100%);
+  color: hsla(0deg, 0%, 100%, 0.8);
   padding: 6rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -25,30 +25,17 @@ body {
     padding: 6rem 1rem;
   }
 }
-.grid.light-theme {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(200deg, 15%, 8%);
-}
-.grid.light-theme .country .card-text {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(200deg, 15%, 8%);
-  border-radius: 0.5rem;
-}
-.grid.light-theme .card-text h4 span {
-  color: hsl(0deg, 0%, 52%);
-}
 
 .country {
-  width: 300px;
   align-self: center;
   justify-self: center;
 }
 .country .card-img {
-  width: 300px;
+  width: 100%;
   height: 250px;
 }
 .country .card-img img {
-  width: 100%;
+  width: 330px;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -63,8 +50,4 @@ body {
 .country .card-text span {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 300;
-}
-.country .card-text.light-themes {
-  background-color: hsl(0deg, 0%, 98%);
-  color: hsl(200deg, 15%, 8%);
 }/*# sourceMappingURL=Countries.css.map */
